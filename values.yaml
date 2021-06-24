@@ -1,0 +1,11 @@
+Namespace:
+  name: nginx-ingress
+
+ingress:
+  class:
+    name: nginx
+  annotation:  ## annotations for setting up ingress
+    prefix:
+      name: nginx.ingress.kubernetes.io
+  port:
+    nodePort: 30000

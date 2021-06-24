@@ -1,0 +1,9 @@
+{{ .Release.Name }} ingress controller has been deployed 
+
+Deployed Nginx version is {{ .Chart.AppVersion }}
+
+To learn more about Release, try
+
+$ helm status {{ .Release.Name }}
+$ helm get all {{ .Release.Name }}
+$ helm uninstall {{ .Release.Name }}

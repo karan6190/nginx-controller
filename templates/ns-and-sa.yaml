@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: {{ .Values.Namespace.name }}
+{{- include "charts.lables" $ | indent 2 }}
+
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: {{ .Release.Name }}-serviceaccount
+  namespace: {{ .Values.Namespace.name }}
+{{- include "charts.lables" $ | indent 2 }}
